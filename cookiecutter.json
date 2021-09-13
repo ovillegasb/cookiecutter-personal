@@ -3,6 +3,7 @@
     "project_slug": "{{ cookiecutter.project_title.lower().replace(' ', '-').replace('-', '_') }}",
     "project_description": "Something cool",
     "project_author_name": "Orlando Villegas",
+    "project_author_mail": "orlando.villegas@univ-pau.fr",
     "project_packages": ["All", "Minimal"],
     "python_version": "3.7"
 }
