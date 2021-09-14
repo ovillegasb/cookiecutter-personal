@@ -5,13 +5,19 @@ channels:
   - conda-forge
   - defaults
 dependencies:
+  {% if cookiecutter.project_packages == "All" -%}
   - fs
   - jupyter
   - jupyterlab
   - pathlib
+  {% endif -%}
   - pip
+  {% if cookiecutter.project_packages == "All" -%}
   - pyprojroot
-  - python=3.7
+  {% endif -%}
+  - python={{ cookiecutter.python_version }}
   - pip:
+    {% if cookiecutter.project_packages == "All" -%}
     - pyhere
+    {% endif -%}
     
